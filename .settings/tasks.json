@@ -1,12 +1,20 @@
 {
     "version": "0.1.0",
-    "command": "msbuild.exe",
+    "command": "gulp",
+    "isShellCommand": true,
     "args": [
-        "/property:GenerateFullPaths=true"
+        "--no-color"
     ],
-    "taskConfiguration": {
-        "build": {
-            "problemMatcher": "$msbuild"
+    "tasks": [
+        {
+            "taskName": "build",
+            "args": [
+                
+            ],
+            "isBuildCommand": true,
+            "problemMatcher": [
+                "$lessCompile"                
+            ]
         }
-    }
+    ]
 }
